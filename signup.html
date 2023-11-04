@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="input-group">
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+            </div>
+            <div class="input-group">
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+            </div>
+            
+            <a href="login.html">Create</a>
+
+        </form>
+    </div>
+    <script>
+         document.getElementById('signupform').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Replace 'your_username' and 'your_password' with the correct credentials.
+            if (username === 'maya' && password === '123') {
+                window.location.href = 'login.html'; // Redirect to the home page
+                alert('success.');
+            
+            } 
+            
+            
+        
+        
+
+        });
+        
+        
+
+    </script>
+    
+    
+    
+</body>
+</html>
